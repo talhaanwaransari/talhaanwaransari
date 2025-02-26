@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTSD</title>
+</head>
+<body>
+    <h2>Practicle 5.1</h2>
+    <pre>
+        <code>
+            #include &lt;stdio.h&gt;
+            
+            typedef enum {
+                SUNDAY,
+                MONDAY,
+                TUESDAY,
+                WEDNESDAY,
+                THURSDAY,
+                FRIDAY,
+                SATURDAY,
+            } DayOfWeek;
+
+            const char* getDayName(DayOfWeek day) {
+                switch (day) {
+                    case SUNDAY: return "Sunday";
+                    case MONDAY: return "Monday";
+                    case TUESDAY: return "Tuesday";
+                    case WEDNESDAY: return "Wednesday";
+                    case THURSDAY: return "Thursday";
+                    case FRIDAY: return "Friday";
+                    case SATURDAY: return "Saturday";
+                    default: return "Invalid Day" ;
+                }
+            }
+            
+            int main() {
+                DayOfWeek today = WEDNESDAY;
+                printf("The selected day is:%s\n", getDayName(today));
+                return 0;
+            }
+        </code>
+    </pre>
+</body>
+</html>
